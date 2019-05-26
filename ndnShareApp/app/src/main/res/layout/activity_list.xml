@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/main_list"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></FrameLayout>
+
+    <RadioGroup
+        android:id="@+id/mainbotton"
+        android:padding="1dp"
+        android:gravity="center_vertical"
+        android:background="#11000000"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2">
+
+        <RadioButton
+            android:id="@+id/filebutton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:button="@android:color/transparent"
+            android:drawableTop="@drawable/filebutton_drawable_selector"
+            android:gravity="center"
+            android:text="Local File"
+            android:textColor="@drawable/filebutton_textcolor_selector"
+            android:textSize="15sp" />
+
+        <RadioButton
+            android:id="@+id/searchbutton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:button="@android:color/transparent"
+            android:drawableTop="@drawable/searchbutton_drawable_selector"
+            android:gravity="center"
+            android:text="NDN Search"
+            android:textColor="@drawable/searchbutton_textcolor_selector"
+            android:textSize="15sp" />
+
+    </RadioGroup>
+
+</LinearLayout>

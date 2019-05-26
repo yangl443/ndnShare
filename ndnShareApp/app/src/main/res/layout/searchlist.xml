@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--不显示的view抢占焦点防止键盘默认弹出-->
+    <View android:layout_width="0dip"
+        android:layout_height="0dip"
+        android:focusableInTouchMode="true" />
+
+    <!--标题栏-->
+    <include android:id="@+id/searchpage_toplist"
+        layout="@layout/toplist" />
+
+    <ListView
+        android:divider="@null"
+        android:id="@+id/searchlist"
+        android:layout_below="@+id/searchpage_toplist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
+
+    <TextView
+        android:id="@+id/search_hint"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:visibility="gone"
+        android:text="请输入想要查找文件的关键字！"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/getfile"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:visibility="gone"
+        android:text="未找到含有该关键词的文件！"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ProgressBar
+        android:id="@+id/pb_search"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+</RelativeLayout>

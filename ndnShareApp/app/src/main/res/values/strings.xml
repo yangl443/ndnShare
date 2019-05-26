@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">NDNShare</string>
+    <string name="service_notification_title">文件共享服务正在运行</string>
+    <string name="service_notification_text">点击打开应用</string>
+    <string name="action_quit">退出应用</string>
+    <string name="broadcast_base_prefix">ndn/share</string>
+    <string name="search_prefix_component">searchfile</string>
+    <string name="face_uri">localhost</string>
+    <string name="data_prefix">askfile/filename</string>
+    <string name="error_nfd">NDNShare功能基于NDN网络，请确保软件NFD正在运行</string>
+    <string name="error_other">程序运行遇到了未知问题，请查看详细Log信息</string>
+
+</resources>
